@@ -15,11 +15,11 @@ def pregunta_01():
     Complete el código presentado a continuación.
     """
     # Lea el archivo `gm_2008_region.csv` y asignelo al DataFrame `df`
-    df = ____
+    df = pd.read_csv('gm_2008_region.csv', sep=",", header=0)
 
     # Asigne la columna "life" a `y` y la columna "fertility" a `X`
-    y = ____[____].____
-    X = ____[____].____
+    y = df['life']
+    X = df['fertility']
 
     # Imprima las dimensiones de `y`
     print(____.____)
